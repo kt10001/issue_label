@@ -2,10 +2,9 @@ name: 'fkisu'
 description: 'manage issue label'
 author: 'fk'
 inputs:
-  milliseconds: # change this
+  user_name:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'user name'
 runs:
   using: 'node16'
   main: 'dist/index.js'
