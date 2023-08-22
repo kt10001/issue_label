@@ -44,9 +44,12 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             core.info(`Hello world`);
+            const username = core.getInput("user_name");
+            core.info(`Hello ${username}`);
+            core.info(`username === admin : ${username === "admin"}`);
         }
         catch (error) {
-            core.info(`error`);
+            core.setFailed("error");
         }
     });
 }
