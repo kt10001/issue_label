@@ -9,5 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          user_name: ${{ secrets.USER_NAME }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
