@@ -10,4 +10,3 @@ jobs:
       - uses: ./
         with:
           user_name: ${{ secrets.USER_NAME }}
-
