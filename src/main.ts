@@ -7,6 +7,7 @@ async function run(): Promise<void> {
     core.info(`Hello ${username}`);
 
     core.info(`username === admin : ${username === "admin"}`);
+    core.info(`event name = ${github.context.eventName}`)
   } catch (error) {
     core.setFailed(error.message);
   }
