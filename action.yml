@@ -5,6 +5,9 @@ inputs:
   user_name:
     required: true
     description: 'user name'
+  github-token:
+    required: true
+    description: 'Your github token, it is secrets.GITHUB_TOKEN.'
 runs:
   using: 'node16'
   main: 'dist/index.js'
